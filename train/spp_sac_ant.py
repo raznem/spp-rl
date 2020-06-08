@@ -24,7 +24,8 @@ TENSORBOARD_DIR = "logs_ant"
 TENSORBOARD_COMMENT = "1m"
 LOG_ALL = True
 LOG_DIR = "logs_ant/basic_logs"
-N_CORES = 24
+N_CORES = 2
+
 USE_GPU = False
 ### ACM ###
 ACM_EPOCHS = 1

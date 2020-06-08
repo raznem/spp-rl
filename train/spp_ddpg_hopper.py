@@ -26,7 +26,7 @@ DDPG_LR = 5e-4
 RUNID = 1
 TENSORBOARD_DIR = "%s_final_run%d" % (ENV_NAME, RUNID)
 LOG_DIR = "%s_final_run%d/basic_logs" % (ENV_NAME, RUNID)
-N_CORES = 10
+N_CORES = 2
 
 
 ACM_EPOCHS = 1

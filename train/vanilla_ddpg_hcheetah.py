@@ -23,7 +23,7 @@ BATCH_SIZE = 5000
 
 TENSORBOARD_DIR = "%s_vanilladdpg_final" % (ENV_NAME)
 LOG_DIR = "%s_vanilladdpg_final/basic_logs" % (ENV_NAME)
-N_CORES = 5
+N_CORES = 2
 
 
 kwargsarr = [{

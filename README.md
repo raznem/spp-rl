@@ -1,7 +1,6 @@
 > 📋A template README.md for code accompanying a Machine Learning paper
 
-# Software and Results for the Paper Entitled 
-# *State Planning Policy Reinforcement Learning*
+# Software and Results for the Paper Entitled  *State Planning Policy Reinforcement Learning*
 
 This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
 

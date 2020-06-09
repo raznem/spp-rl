@@ -24,7 +24,7 @@ TENSORBOARD_DIR = "logs_sac_hcheetah"
 TENSORBOARD_COMMENT = ""
 LOG_ALL = True
 LOG_DIR = "logs_sac_hcheetah/basic_logs"
-N_CORES = 96
+N_CORES = 2
 USE_GPU = False
 
 

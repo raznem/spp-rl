@@ -1,6 +1,6 @@
 > 📋A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+# Software and Results for the Paper Entitled  *State Planning Policy Reinforcement Learning*
 
 This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
 
@@ -23,6 +23,9 @@ To train the model(s) in the paper, run this command:
 ```train
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
+
+take note of the `N_CORES` parameter within the training scripts, which 
+should be set accordingly to the available CPU unit(s).
 
 > 📋Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
 

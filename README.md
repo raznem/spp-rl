@@ -1,5 +1,3 @@
-> 📋A template README.md for code accompanying a Machine Learning paper
-
 # Software and Results for the Paper Entitled  *State Planning Policy Reinforcement Learning*
 
 This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
@@ -8,13 +6,17 @@ This repository is the official implementation of [My Paper Title](https://arxiv
 
 ## Requirements
 
-To install requirements:
+Code was run on Ubuntu 18 in anaconda environment, in case of other set-up extra dependencies could be required.
+To install requirements run:
 
 ```setup
-pip install -r requirements.txt
+pip install -r rltoolkit/requirements.txt
 ```
 
-> 📋Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+Then install `rltoolkit` with:
+```rltoolkit install
+pip install -e rltoolkit/
+```
 
 ## Training
 

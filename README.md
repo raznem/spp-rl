@@ -32,21 +32,14 @@ should be set accordingly to the available CPU unit(s).
 
 ## Evaluation
 
-To evaluate my model on ImageNet, run:
+Model evaluation code is available in the jupyter notebook: `notebooks/load_and_test.ipynb`.
+There you can load pre-trained models, evaluate their reward, and render in the environment.
 
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
-> 📋Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
 ## Pre-trained Models
 
-You can download pretrained models here:
+You can find pre-trained models in `models` directory and check how to load them in `load_and_test.ipynb` notebook.
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
-> 📋Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
 

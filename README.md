@@ -20,16 +20,15 @@ pip install -e rltoolkit/
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+To train the models in the paper, you can use scripts from `train` folder.
+For example, to train SPP-SAC on hopper, simply run:
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python train/spp_sac_hopper.py
 ```
 
 take note of the `N_CORES` parameter within the training scripts, which 
 should be set accordingly to the available CPU unit(s).
-
-> 📋Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
 
 ## Evaluation
 

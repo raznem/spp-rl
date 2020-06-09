@@ -14,6 +14,8 @@ To install requirements run:
 pip install -r rltoolkit/requirements.txt
 ```
 
+# TODO: write about mujoco licence.
+
 Then install `rltoolkit` with:
 ```rltoolkit install
 pip install -e rltoolkit/
@@ -27,6 +29,9 @@ For example, to train SPP-SAC on the hopper, simply run:
 ```train
 python train/spp_sac_hopper.py
 ```
+
+# TODO: write about output of these scripts 
+# TODO: hyperparameters reference appendix and scripts
 
 take note of the `N_CORES` parameter within the training scripts, which 
 should be set accordingly to the available CPU unit(s).

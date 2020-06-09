@@ -1,0 +1,49 @@
+name: Tests without Mujoco
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+#     env:
+#       LD_LIBRARY_PATH: "/home/runner/.mujoco/mujoco200/bin"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+        
+#     - name: Settup libraries
+#       run: |
+#         sudo apt-get update
+#         sudo apt-get install -y libosmesa6-dev libgl1-mesa-dev patchelf
+#     - name: Download Mujoco
+#       run: |
+#         mkdir ~/.mujoco/
+#         cd ~/.mujoco/
+#         wget https://www.roboti.us/download/mjpro150_linux.zip
+#         wget https://www.roboti.us/download/mujoco200_linux.zip
+#         unzip mjpro150_linux.zip
+#         unzip mujoco200_linux.zip
+#         mv mujoco200_linux mujoco200
+#     - name: Add Mujoco key
+#       shell: bash
+#       env:
+#         MUJOCO_KEY: ${{secrets.MUJOCO_KEY}}
+#       run: |
+#         echo  "$MUJOCO_KEY" > ~/.mujoco/mjkey.txt
+    - uses: actions/cache@v1
+      id:   cache
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements_no_mujoco.txt
+    - name: Test with pytest
+      run: |
+        xvfb-run -s "-screen 0 1400x900x24" pytest -k "not mujoco"

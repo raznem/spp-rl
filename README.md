@@ -1,4 +1,4 @@
-# Software and Results for the Paper Entitled  *State Planning Policy Reinforcement Learning*
+# Software and Results for the *State Planning Policy Reinforcement Learning* Paper
 
 This repository is the official implementation of the State Planning Policy Reinforcement Learning.  
 Demo [video](https://youtu.be/dWnhNnX6f0g).

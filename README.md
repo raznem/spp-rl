@@ -55,3 +55,4 @@ Our model achieves the following performance on :
 ### [OpenAI gym MuJoCo environments](https://gym.openai.com/envs/#mujoco)
 
 # TODO: plots with performance on different envs.
+<img src="hcheetah_plot_all.jpg" alt="SPPRL" width="500"/>

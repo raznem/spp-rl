@@ -14,7 +14,7 @@ To install requirements run:
 pip install -r rltoolkit/requirements.txt
 ```
 
-# TODO: write about mujoco licence.
+Requirements will install mujoco-py which will work only on installed mujoco with licence (see **Install MuJoCo** section in [mujoco-py documentation](https://github.com/openai/mujoco-py))
 
 Then install `rltoolkit` with:
 ```rltoolkit install
@@ -30,8 +30,9 @@ For example, to train SPP-SAC on the hopper, simply run:
 python train/spp_sac_hopper.py
 ```
 
-# TODO: write about output of these scripts 
-# TODO: hyperparameters reference appendix and scripts
+After running the script the folder with logs will appear. It will contain tensorboard logs of your runs and `basic_logs` folder. In `basic_logs` you can find 2 pickle files per experiment one with model and one with pickled returns history.
+
+You can find hyperparameters used in our experiments either in paper appendix or `train` folder scripts.
 
 take note of the `N_CORES` parameter within the training scripts, which 
 should be set accordingly to the available CPU unit(s).

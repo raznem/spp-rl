@@ -50,9 +50,13 @@ You can find pre-trained models in `models` directory and check how to load them
 
 ## Results
 
-Our model achieves the following performance on :
+Our model achieves the following performance on [OpenAI gym MuJoCo environments](https://gym.openai.com/envs/#mujoco):
 
-### [OpenAI gym MuJoCo environments](https://gym.openai.com/envs/#mujoco)
-
-# TODO: plots with performance on different envs.
-<img src="hcheetah_plot_all.jpg" alt="SPPRL" width="500"/>
+HalfCheetah results:  
+<img src="plots/hcheetah_plot_all.jpg" alt="hcheetah" width="500"/>   
+Hopper results:  
+<img src="plots/hopper_plot_all.jpg" alt="hopper" width="500"/>   
+Walker2d results:  
+<img src="plots/walker_plot_all.jpg" alt="walker" width="500"/>   
+Ant results:  
+<img src="plots/ant3_plot.jpg" alt="ant3" width="500"/>  
